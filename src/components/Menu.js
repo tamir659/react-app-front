@@ -3,7 +3,7 @@ import '../style.css'
 import axios from 'axios';
 import { Typography } from '@mui/material';
 
-const url = "https://reactappapi.blueground-7ac69658.germanywestcentral.azurecontainerapps.io/"
+const url = process.env.REACT_APP_API_URL || "http://localhost:5000"
 
 
 function Menu({name,image,category_id}) {

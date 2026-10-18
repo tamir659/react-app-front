@@ -3,7 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import Menu from '../components/Menu'; 
 import Appbar from '../components/Appbar';
-const url = "https://reactappapi.blueground-7ac69658.germanywestcentral.azurecontainerapps.io/"
+const url = process.env.REACT_APP_API_URL || "http://localhost:5000"
 
 
 function Dishes() {
